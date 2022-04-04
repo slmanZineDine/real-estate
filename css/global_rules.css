@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+*::before , *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: system-ui; }
+h1,h2,h3,h4,h5,h6 { margin: 0; }
+a { text-decoration: none; }
+ul { list-style-type: none; }
+button { cursor: pointer }
+input,textarea { border: none; }
+input:focus { outline: none }
+.container { padding: 0 25px; margin: auto; }
+@media (min-width: 768px) {
+    .container { width: 750px; }
+}
+@media (min-width: 992px) {
+    .container { width: 970px; }
+}
+@media (min-width: 1200px) {
+    .container { width: 1170px; }
+}
