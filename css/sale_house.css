@@ -1,0 +1,15 @@
+/* Variables */
+:root {
+    --primaryColor: #21b0f7;
+    --secondaryColor: #ececec;
+    --paddingBetweenSection: 100px 0 100px;
+}
+/* Handle With Header */
+.nav-bar {
+    position: relative;
+    background-color: #232733;
+    z-index: 2;
+}
+.nav-bar .links li a:hover {
+    background-color: var(--primaryColor);
+}

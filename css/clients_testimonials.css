@@ -1,0 +1,62 @@
+/* Variables */
+:root {
+    --primaryColor: #21b0f7;
+    --secondaryColor: #ececec;
+    --paddingBetweenSection: 100px 0 100px;
+}
+/* Handle With Header */
+.nav-bar {
+    position: relative;
+    background-color: #232733;
+    z-index: 2;
+}
+.nav-bar .links li a:hover {
+    background-color: var(--primaryColor);
+}
+/* Start Testimonials */
+.testimonials {
+    padding: var(--paddingBetweenSection);
+    background-color: var(--secondaryColor);
+}
+.testimonials .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 40px;
+}
+.testimonials .container .member {
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+.testimonials .container .member .image {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    transform: translateY(-50%);
+    background-color: var(--secondaryColor);
+    border-radius: 50%;
+    width: 100px;
+    padding: 10px;
+}
+.testimonials .container .member img {
+    width: 100%;
+    border-radius: 50%;
+}
+.testimonials .container .member h4 {
+    margin: 10px 0;
+    color: #7777a1;
+    font-size: 15px;
+    font-weight: normal;
+}
+.testimonials .container .member i.fas.fa-star {
+    color: #ffc107;
+}
+.testimonials .container .member p {
+    margin-top: 10px;
+    color: #7777a1;
+    line-height: 1.5;
+    font-size: 15px;
+    max-width: 100%;
+}
+/* End Testimonials */

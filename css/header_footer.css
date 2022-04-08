@@ -3,6 +3,7 @@
     --padding-nav: 20px 0;
     --link-bg:#232733;
     --link-color:#fff;
+    --footer-bg: #232733;
 }
 
 .nav-bar {
@@ -58,6 +59,7 @@
         position: absolute;
         top: calc(100% + 1px);
         width: 200px;
+        border-radius: 0 0 5px 5px;
         text-align: right;
         background-color: rgba(0, 0, 0, 0.6);
         display: none;
@@ -95,7 +97,7 @@
 /* Start Footer */
 .footer {
     padding: 40px 0;
-    background-color: #232733;
+    background-color: var(--footer-bg);
 }
 .footer .container {
     display: flex;
