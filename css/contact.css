@@ -18,4 +18,63 @@
 .contact {
     padding: 40px 0;
 }
+.contact .container {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+.contact form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.contact form input,textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px
+}
+.contact form input:focus,textarea:focus {
+    border: 2px solid #000;
+}
+.contact form textarea {
+    resize: vertical;
+}
+.contact form input[type="submit"] {
+    font-weight: bold;
+    width: 100px;
+    background-color: #ff385c;
+    color: #fff;
+    transition: .5s;
+}
+.contact form input[type="submit"]:hover {
+    border: 1px solid #ff385c;
+    background-color: #fff;
+    color: #000;
+}
+.contact .conection-info {
+    display: flex;
+    flex-direction: column;
+}
+.contact .conection-info .box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.contact .conection-info .box i {
+    font-size: 25px;
+    color: var(--primaryColor);
+}
+@media (max-width: 792px) {
+    .contact .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact form {
+        width: 100%;
+    }
+}
 /* End Contact */

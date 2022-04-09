@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/global_rules.css">
     <link rel="stylesheet" href="../css/header_footer.css">
     <link rel="stylesheet" href="../css/add_house.css">
+    <link rel="icon" href="../images/real-estate-logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -32,7 +33,44 @@
     <!-- End navbar -->
 
     <!-- Start Add House -->
-    <P style="text-align: center;padding: 50px; font-size: 30px; font-weight: bold;">قريبا...</P>
+    <div class="add-house">
+        <div class="container">
+            <form method="" action="#">
+                <div class="box">
+                    <h3>المساحة</h3>
+                    <input type="text" name="area" placeholder="ادخل المساحة">
+                </div>
+                <div class="box">
+                    <h3>عدد الغرف</h3>
+                    <input type="number" name="rooms" placeholder="ادخل عدد الغرف">
+                </div>
+                <div class="box">
+                    <h3>الطابق</h3>
+                    <input type="number" name="floor" placeholder="ادخل الطابق"> 
+                </div>
+                <div class="box">
+                    <h3>العنوان</h3>
+                    <input type="text" name="address" placeholder="ادخل العنوان">
+                </div>
+                <div class="box">
+                    <h3>مستوى الاكساء</h3>
+                    <input type="text" name="level" placeholder="اكتب مستوى الاكساء">
+                </div>
+                <div class="box">
+                    <h3>السعر</h3>
+                    <input type="number" name="price" placeholder="ادخل السعر">
+                </div>
+                <div class="box">
+                    <h3>الصور</h3>
+                    <label for="files" class="files">إضافة صور</label>
+                    <input id="files" style="visibility:hidden;" type="file" multiple>
+                </div>
+                <div class="box">
+                    <input type="submit" value="إضافة منزل">
+                </div>
+            </form>
+        </div>
+    </div>
     <!-- End Add House -->
 
     <!-- Start Footer -->

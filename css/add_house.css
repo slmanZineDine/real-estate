@@ -13,3 +13,48 @@
 .nav-bar .links li a:hover {
     background-color: var(--primaryColor);
 }
+/* Start Add House */
+.add-house {
+    padding: 40px 0;
+}
+.add-house form {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 40px;
+}
+.add-house form .box {}
+.add-house form .box h3 {
+    margin-bottom: 15px;
+}
+.add-house form .box input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px
+}
+.add-house form input:focus {
+    border: 2px solid #000;
+}
+.add-house form .box .files {
+    display: block;
+    width: fit-content;
+    background-color: #21b0f7;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+.add-house form .box input[type="submit"] {
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #ff385c;
+    color: #fff;
+    transition: .5s;
+}
+.add-house form .box input[type="submit"]:hover {
+    border: 1px solid #ff385c;
+    background-color: #fff;
+    color: #000;
+}
+/* End Add House */
